@@ -1,0 +1,350 @@
+/* Main Theme Colors */
+:root {
+    --primary-color: #4F46E5;
+    --secondary-color: #10B981;
+    --accent-color: #F59E0B;
+    --background-dark: #1F2937;
+    --text-light: #F9FAFB;
+}
+
+/* Hide Streamlit Branding */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+
+/* Global Responsiveness */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Custom Header Styling */
+.main-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.main-header h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.main-header p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+/* Card Styling */
+.custom-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #4F46E5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Feature Box */
+.feature-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-box h3 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.feature-box p {
+    margin: 0.5rem 0 0 0;
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+/* Prediction Result Card */
+.prediction-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 1rem 0;
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.prediction-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.prediction-confidence {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #10B981;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Skill Badge */
+.skill-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    margin: 0.3rem;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.skill-badge:hover {
+    transform: scale(1.05);
+}
+
+/* Stats Box */
+.stats-box {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.stats-label {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+}
+
+/* Button Styling */
+.stButton > button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.5);
+}
+
+/* Tab Styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 1rem;
+    background-color: transparent;
+    flex-wrap: wrap;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: white;
+    color: #1F2937;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    border: 2px solid #e5e7eb;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: 2px solid #667eea;
+}
+
+/* Progress Bar */
+.progress-container {
+    background: #e5e7eb;
+    border-radius: 10px;
+    height: 30px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: width 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Info Box */
+.info-box {
+    background: linear-gradient(135deg, #479b97 0%, #9c3d5b 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+
+/* Footer */
+.custom-footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-top: 2px solid #e5e7eb;
+    color: #6b7280;
+}
+
+/* General Spacing and Layout */
+.stContainer {
+    padding: 0;
+}
+
+.stMarkdown {
+    margin-bottom: 1rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+@media (max-width: 768px) {
+    /* Responsive Header */
+    .main-header {
+        padding: 1.5rem;
+    }
+    .main-header h1 {
+        font-size: 2rem;
+    }
+    .main-header p {
+        font-size: 1rem;
+    }
+
+    /* Responsive Cards */
+    .custom-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Responsive Feature Box */
+    .feature-box {
+        padding: 1rem;
+    }
+    .feature-box h3 {
+        font-size: 1.2rem;
+    }
+    .feature-box p {
+        font-size: 0.9rem;
+    }
+    
+    /* Responsive Prediction Card */
+    .prediction-card {
+        padding: 1rem;
+    }
+    .prediction-title {
+        font-size: 1.4rem;
+    }
+    .prediction-confidence {
+        font-size: 1.8rem;
+    }
+
+    /* Responsive Skill Badge */
+    .skill-badge {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        margin: 0.2rem;
+    }
+    
+    /* Responsive Stats Box */
+    .stats-box {
+        padding: 1rem;
+    }
+    .stats-number {
+        font-size: 2rem;
+    }
+    .stats-label {
+        font-size: 0.9rem;
+    }
+
+    /* Responsive Buttons */
+    .stButton > button {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Responsive Tabs */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 0.5rem;
+    }
+    .stTabs [data-baseweb="tab"] {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Responsive Info Box */
+    .info-box {
+        padding: 1rem;
+    }
+
+    /* Responsive Footer */
+    .custom-footer {
+        padding: 1.5rem;
+    }
+
+    /* Sidebar Responsiveness */
+    .sidebar .sidebar-content {
+        padding: 1rem;
+    }
+
+    /* Ensure columns are responsive */
+    .stColumn {
+        padding: 0 0.25rem;
+    }
+}
